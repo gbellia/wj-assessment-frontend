@@ -4,9 +4,9 @@
   "description": "Criamos este teste para avaliar seus conhecimentos e habilidades frontend (HTML, CSS e JavaScript).",
   "main": "app.js",
   "dependencies": {
-    "connect": "~3.6.6",
-    "cors": "^2.8.5",
-    "serve-static": "~1.13.2"
+    "connect": "",
+    "cors": "",
+    "serve-static": ""
   },
   "scripts": {
     "start": "node app.js"
