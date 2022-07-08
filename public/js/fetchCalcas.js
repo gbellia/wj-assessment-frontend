@@ -34,12 +34,14 @@ fetch('http://localhost:8888/api/V1/categories/list')
 fetch('http://localhost:8888/api/V1/categories/2')
 .then(res => res.json())
 .then(json => {
-    var gridCalcados = document.querySelector('.grid-calcas');
+    var gridCalcas = document.querySelector('.grid-calcas');
     json.items.forEach(function(val){
-        gridCalcados.innerHTML += 
+        gridCalcas.innerHTML += 
         `<div class="card`+val.id+`">
-            <h2 class="name-`+val.name+`">`+val.name+`</h2>
-            <img src="`+val.image+`"/>
+            <h2 class="name-`+val.path+`">`+val.name+`</h2>
+             <img src="`+val.image+`" width="150px" height="150px"/>
+            <h3>R$`+val.price+`</h3>
+            <button>COMPRAR</button>
         </div>`;
     })
 //console.log(json.items[0].name);
