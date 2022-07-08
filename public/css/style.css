@@ -259,23 +259,6 @@ footer {
     display: flex;
 }
 
-.container-cards{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
-}
-.box-cards{
-    padding-right: 10px;
-    width: 100%;
-}
-.box-cards h1{
-    color: red;
-    font-weight: normal;
-
-}
-
 .filtro {
     width: 250px;
      padding: 10px;
@@ -296,14 +279,6 @@ footer {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
-}
-
-.order-list {
-    border-top: solid 1px rgba(232, 232, 232, 1);
-    border-bottom: solid 1px rgba(232, 232, 232, 1);
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
 }
 
 .container-cor{
@@ -329,14 +304,36 @@ footer {
     margin-right: 3px;
 }
 
-.pagina-calcados {
+.container-cards{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    max-width: 1024px;
-    margin: 0 auto;
-    height: 100%;
-    margin-top: 10px;
+
 }
+.box-cards{
+    padding-right: 10px;
+    width: 100%;
+}
+.box-cards h1{
+    color: red;
+    font-weight: normal;
+
+}
+
+
+
+.order-list {
+    border-top: solid 1px rgba(232, 232, 232, 1);
+    border-bottom: solid 1px rgba(232, 232, 232, 1);
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
 
 .grid, .grid-calcados, .grid-camisetas, .grid-calcas{
     width: 100%;
@@ -349,11 +346,13 @@ footer {
     margin-top: 10px;
 }
 
-
-
-.grid-calcados img, .grid-camisetas img, .grid-calcas img {
-    border: 1px solid rgba(232, 232, 232, 1);
+.grid-calcados, .grid-camisetas, .grid-calcas {
+    width: 180px;
+    height: 100%;
+    text-align: center;
 }
+
+
 
 
 @media screen and (max-width: 1024px){
@@ -362,9 +361,7 @@ footer {
 }
 
 @media only screen and (max-width: 960px) {
-    .grid, .grid-calcados, .grid-camisetas, .grid-calcas{
-        grid-template-columns: auto auto auto;
-    }
+   
     
   }
 
@@ -375,9 +372,7 @@ footer {
         width: 100%;
         padding: 10px;
     }
-    .grid, .grid-calcados, .grid-camisetas, .grid-calcas{
-        grid-template-columns: auto auto auto;
-    }
+   
   
    
 
@@ -427,9 +422,7 @@ footer {
   }
 
 @media screen and (max-width: 320px){
-    .grid, .grid-calcados, .grid-camisetas, .grid-calcas {
-        grid-template-columns: auto;
-    }
+   
 
 	
 }

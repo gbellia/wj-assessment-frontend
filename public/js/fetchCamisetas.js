@@ -38,11 +38,11 @@ fetch('http://localhost:8888/api/V1/categories/1')
     json.items.forEach(function(val){
         gridCamisetas.innerHTML += 
         `<div class="card`+val.id+`">
-        <h2 class="name-`+val.path+`">`+val.name+`</h2>
         <img src="`+val.image+`" width="150px" height="150px"/>
-        <h3>R$`+val.price+`</h3>
-        <button>COMPRAR</button>
-        </div>`;
+          <h4 class="name-`+val.path+`">`+val.name+`</h4>
+          <h3>R$`+val.price+`</h3>
+          <button>COMPRAR</button>
+         </div>`;
     })
 //console.log(json.items[0].name);
 })
